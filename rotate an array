@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> arr={1,2,3,4,5,6,7,8};
+    int k=3;
+
+    reverse(arr.begin(),arr.end());
+
+     for(auto it:arr){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+
+    reverse(arr.begin(),arr.end()-k);
+
+    for(auto it:arr){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+
+    reverse(arr.end()-k,arr.end());
+
+    for(auto it:arr){
+        cout<<it<<" ";
+    }
+    return 0;
+}
